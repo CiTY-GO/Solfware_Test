@@ -14,7 +14,7 @@ default:
 build:        
 	@echo 
 	@echo Building regular executable ...
-	@gcc $(COMPILE_PARAMETERS) -I. -o  grep.exe grep.c 
+	@gcc -fprofile-arcs -ftest-coverage $(COMPILE_PARAMETERS) -I. -o  grep.exe grep.c 
 	@echo done
 build-st:        
 	@echo 
