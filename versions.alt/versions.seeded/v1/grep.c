@@ -53,6 +53,8 @@
 #include "getopt.h"
 #include "getpagesize.h"
 #include "grep.h"
+#include "FaultSeeds.h"
+
 
 #undef MAX
 #define MAX(A,B) ((A) > (B) ? (A) : (B))
