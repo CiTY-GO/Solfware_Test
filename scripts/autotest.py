@@ -54,11 +54,21 @@ def run_by_version():
                 cd {OUTPUT_PATH};
                 mkdir {i}
                 ''')
+                
+                #请参考文档了解以下结果输出路径的详细说明
+
+                #正确版本用例输出结果路径
                 Right_cmd_PATH = os.path.join(OUTPUT_PATH, f'{i}/test0.txt')
+                #错误版本用例结果输出路径
                 Error_cmd_PATH = os.path.join(OUTPUT_PATH, f'{i}/test.txt')
+
+                #分支覆盖结果输出路径
                 Static_info_PATH = os.path.join(OUTPUT_PATH, f'{i}/Static_info.txt')
+
+                #比较结果输出路径
                 Comp_info_PATH = os.path.join(OUTPUT_PATH, f'{i}/comp_info.txt')
                 
+
                 # print(params[i])
                 # os.system(f'echo {params[i]}')
 
@@ -67,6 +77,10 @@ def run_by_version():
                 make build;
                 {echo_green('COMPILE finished. generated [grep.exe] [grep.gcno]')}
                 ''')
+                
+
+                #以下代码中diff命令没有给出正确的输出
+                #TODO：diff
                 
                 os.system(f'''
                     echo "BEGIN_INPUT" >> {LOG_FILE_PATH};
