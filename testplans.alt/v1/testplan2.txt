@@ -1,0 +1,199 @@
+-0 12345 ../inputs/grep1.dat
+-1 12345 ../inputs/grep1.dat
+-2 12345 ../inputs/grep1.dat
+-3 12345 ../inputs/grep1.dat
+-4 12345 ../inputs/grep1.dat
+-5 12345 ../inputs/grep1.dat
+-6 12345 ../inputs/grep1.dat
+-7 12345 ../inputs/grep1.dat
+-8 12345 ../inputs/grep1.dat
+-9 12345 ../inputs/grep1.dat
+-f 12345 ../inputs/grep1.dat
+-i 12345 ../inputs/grep1.dat
+-Y 12345 ../inputs/grep1.dat
+-A -12345 ../inputs/grep1.dat
+-B -12345 ../inputs/grep1.dat
+-F -E 12345 ../inputs/grep1.dat
+-E -F 12345 ../inputs/grep1.dat
+-E -G 12345 ../inputs/grep1.dat
+-G -X 12345 ../inputs/grep1.dat
+-f nosuchfile ../inputs/grep1.dat
+-f ../inputs/grep1.dat ../inputs/grep1.dat
+-c 12345a -I grep1.dat
+12345a -I grep1.dat
+-c include -I grep1.dat
+include -I grep1.dat
+include ../inputs/grep1.dat
+-l include -I ../inputs/grep1.dat
+-L 12345a -I ../inputs/grep1.dat
+12345a -I ../inputs/grep1.dat
+"--" 12345 ../inputs/grep1.dat
+- -- 12345 ../inputs/grep1.dat
+"[z-a\]" ../inputs/grep1.dat
+"[5-1\]" ../inputs/grep1.dat
+"[F-A\]" ../inputs/grep1.dat
+-ff
+-f
+'a$a' ../inputs/grep1.dat
+'if$' ../inputs/grep1.dat
+'switch$|else' ../inputs/grep1.dat
+"1\+\+" ../inputs/grep1.dat
+"1\?\+" ../inputs/grep1.dat
+"1\+\?" ../inputs/grep1.dat
+"[" ../inputs/grep1.dat
+"a[" ../inputs/grep1.dat
+"a*[" ../inputs/grep1.dat
+"[a" ../inputs/grep1.dat
+"[1" ../inputs/grep1.dat
+"[1-9" ../inputs/grep1.dat
+"[1-\]" ../inputs/grep1.dat
+"[a-\]" ../inputs/grep1.dat
+"[1a-\]" ../inputs/grep1.dat
+"[[:alpha:\]-5\]" ../inputs/grep1.dat
+"[z[:digit:\]-f\]" ../inputs/grep1.dat
+"[[:alnum:\]-9\]" ../inputs/grep1.dat
+"[1-2-9\]" ../inputs/grep1.dat
+"[a-c-z\]" ../inputs/grep1.dat
+"[1A-Z-A\]" ../inputs/grep1.dat
+"[[:digit:\]-1-9\]" ../inputs/grep1.dat
+"[[:digit:\]-A-Z\]" ../inputs/grep1.dat
+"[[:digit:\]-a-z\]" ../inputs/grep1.dat
+"[1-2-" ../inputs/grep1.dat
+"[1A-Z-" ../inputs/grep1.dat
+"[Aa-z-" ../inputs/grep1.dat
+"[1-" ../inputs/grep1.dat
+"[1A-" ../inputs/grep1.dat
+"[Aa-" ../inputs/grep1.dat
+"[[:" ../inputs/grep1.dat
+"a[[:" ../inputs/grep1.dat
+"1-9[[:" ../inputs/grep1.dat
+"[[:a:\]\]" ../inputs/grep1.dat
+"[[:1:\]\]" ../inputs/grep1.dat
+"[[:abcdefg:\]\]" ../inputs/grep1.dat
+"[[:alpha:\]" ../inputs/grep1.dat
+"[a[:digit:\]" ../inputs/grep1.dat
+"[[:alnum:\]" ../inputs/grep1.dat
+"\" ../inputs/grep1.dat
+"if\" ../inputs/grep1.dat
+"else\" ../inputs/grep1.dat
+'\`' ../inputs/grep1.dat
+'if\`' ../inputs/grep1.dat
+'\`else' ../inputs/grep1.dat
+"\'" ../inputs/grep1.dat
+"if\'" ../inputs/grep1.dat
+"\'else" ../inputs/grep1.dat
+"\1" ../inputs/grep1.dat
+"\2" ../inputs/grep1.dat
+"\3" ../inputs/grep1.dat
+"\4" ../inputs/grep1.dat
+"\5" ../inputs/grep1.dat
+"\6" ../inputs/grep1.dat
+"\7" ../inputs/grep1.dat
+"\8" ../inputs/grep1.dat
+"\9" ../inputs/grep1.dat
+"\)" ../inputs/grep1.dat
+"if\)" ../inputs/grep1.dat
+"[a-z\]\)" ../inputs/grep1.dat
+"\{" ../inputs/grep1.dat
+"a\{" ../inputs/grep1.dat
+"[1-9\]\{" ../inputs/grep1.dat
+"\{2,1}" ../inputs/grep1.dat
+"a\{2,1}" ../inputs/grep1.dat
+"\{1" ../inputs/grep1.dat
+"\{1,2" ../inputs/grep1.dat
+"a\{1" ../inputs/grep1.dat
+"\{1\{" ../inputs/grep1.dat
+"\{1,2\{" ../inputs/grep1.dat
+"[a-z\]\{1,2\{" ../inputs/grep1.dat
+"a\{1,2\}" ../inputs/grep1.dat
+"[1-9\]\{1,2\}" ../inputs/grep1.dat
+"A\{1,2\}" ../inputs/grep1.dat
+"A\{0\}" ../inputs/grep1.dat
+"1\{0\}" ../inputs/grep1.dat
+"[a-z\]\{0\}" ../inputs/grep1.dat
+"\(" ../inputs/grep1.dat
+"a\(" ../inputs/grep1.dat
+"a\(a" ../inputs/grep1.dat
+"\|\(a\|b\)1*2\?3\+" ../inputs/grep1.dat
+"\|\(if\|else\)1*2\?3\+" ../inputs/grep1.dat
+"\|\(for\|12345\)a*b\?c\+" ../inputs/grep1.dat
+"a" ../inputs/biginput.dat
+"[a-z\]" ../inputs/biginput.dat
+"5\|7" ../inputs/biginput.dat
+-5 if ../inputs/grep1.dat
+-7 else ../inputs/grep1.dat
+-4 12345 ../inputs/grep1.dat
+"[[:alnum:\]\]" ../inputs/grep1.dat
+"1[[:alnum:\]\]" ../inputs/grep1.dat
+"a*[[:alnum:\]\]" ../inputs/grep1.dat
+-f ../inputs/biginput.dat ../inputs/grep1.dat
+-f ../inputs/biginput2.dat ../inputs/grep1.dat
+-f ../inputs/input_enter1 ../inputs/grep1.dat
+-f ../inputs/input_enter2 ../inputs/grep1.dat
+-f ../inputs/input_enter3 ../inputs/grep1.dat
+"\\" ../inputs/grep1.dat
+"1\\" ../inputs/grep1.dat
+"a\\" ../inputs/grep1.dat
+"\^" ../inputs/grep1.dat
+"1\^" ../inputs/grep1.dat
+"a\^" ../inputs/grep1.dat
+"1\|^" ../inputs/grep1.dat
+"a\|^" ../inputs/grep1.dat
+"\(1\)^" ../inputs/grep1.dat
+'\$' ../inputs/grep1.dat
+'if\$' ../inputs/grep1.dat
+'main\$' ../inputs/grep1.dat
+'$' ../inputs/grep1.dat
+'if$' ../inputs/grep1.dat
+'main$' ../inputs/grep1.dat
+'$if' ../inputs/grep1.dat
+'if$if' ../inputs/grep1.dat
+'if$else' ../inputs/grep1.dat
+">" ../inputs/grep1.dat
+"1>" ../inputs/grep1.dat
+"1>a" ../inputs/grep1.dat
+"B" ../inputs/grep1.dat
+"ABCDE" ../inputs/grep1.dat
+"[A-B\]" ../inputs/grep1.dat
+"*" ../inputs/grep1.dat
+"*a" ../inputs/grep1.dat
+"*\(abcde\)" ../inputs/grep1.dat
+"\+" ../inputs/grep1.dat
+"1\+" ../inputs/grep1.dat
+"if\+" ../inputs/grep1.dat
+"+" ../inputs/grep1.dat
+"+if" ../inputs/grep1.dat
+"+else" ../inputs/grep1.dat
+"{" ../inputs/grep1.dat
+"if{" ../inputs/grep1.dat
+"else{" ../inputs/grep1.dat
+"1\{10,11\}2" ../inputs/grep1.dat
+"a\{10,11\}b" ../inputs/grep1.dat
+"if\{10,11\}else" ../inputs/grep1.dat
+"\." ../inputs/grep1.dat
+"1\.a" ../inputs/grep1.dat
+"if\.else" ../inputs/grep1.dat
+"\[" ../inputs/grep1.dat
+"if\[" ../inputs/grep1.dat
+"if\[else" ../inputs/grep1.dat
+-i "[A-z1\]" ../inputs/grep1.dat
+-i "[C-x2\]" ../inputs/grep1.dat
+-i "if[Xx5\]" ../inputs/grep1.dat
+-X grep 12345 ../inputs/grep1.dat
+-X grep abcde ../inputs/grep1.dat
+-X grep if ../inputs/grep1.dat
+-e 1 -e 2 ../inputs/grep1.dat
+-e a -e b ../inputs/grep1.dat
+-e if -e else ../inputs/grep1.dat
+-e 12345 -e abcde -f ../inputs/input_1.dat ../inputs/grep1.dat
+-e if -e else -f ../inputs/input_1.dat ../inputs/grep1.dat
+-e 1 -e 2 -e 3 -e 4 -e 5 -e 12345 -f ../inputs/input_1.dat ../inputs/grep1.dat
+-f ../inputs/input_2.dat ../inputs/grep1.dat
+-i -f ../inputs/input_2.dat ../inputs/grep1.dat
+-v -f ../inputs/input_2.dat ../inputs/grep1.dat
+"\(\b\)*" ../inputs/grep1.dat
+"if\(\b\)*" ../inputs/grep1.dat
+"\(\b\)\+" ../inputs/grep1.dat
+"\(\a|b*\|c\?|d\+\)\{1\}" ../inputs/grep1.dat
+"\(\if|else*\|for\?|while\+\)\{1\}" ../inputs/grep1.dat
+"\(\do|12345*\|main\?|A\+\)\{1\}" ../inputs/grep1.dat

@@ -7,7 +7,13 @@ def parse_params(input_file_path: str):
     for line in lines:
         # check validation
         assert line[:4] == '-P [' and line[-2:] == ']\n'
-        # TODO: 还要做转义字符的处理，这里只是把位于-P []之中的内容提取出来
-        params.append(line[4:-2])
+        line = line.replace('-P [', '')
+        line = line.replace('e[ ]\[', 'e ')
+        line = line.replace('dat]', 'dat')
+        line = line.replace('][ ] -I [ ]\[', ' -I ')
+        line = line.replace('] -I [', ' -I ')
+        line = line.replace('f]', 'f')
+        line = line.replace('.../', '../../../')
+        params.append(line)
     
     return params
