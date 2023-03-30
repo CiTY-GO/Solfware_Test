@@ -1,6 +1,6 @@
 # 植入错误宏
 def insert_fault(fault_seed_file:str,code_version):
-    if  code_version == 19:
+    if  code_version == 18:
         return
     line_number = code_version
     with open(fault_seed_file, 'r') as f:
@@ -11,7 +11,7 @@ def insert_fault(fault_seed_file:str,code_version):
             f.write(line)
 # 恢复错误宏        
 def recover_fault(fault_seed_file:str,code_version):
-    if  code_version == 19:
+    if  code_version == 18:
         return
     line_number = code_version
     with open(fault_seed_file, 'r') as f:

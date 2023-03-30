@@ -20,4 +20,3 @@ if __name__ == '__main__':
             line = line.replace('.../', '../../../')
             #line = line.replace('\\', '\\\\\\\\')
             file_out.write(line)
-

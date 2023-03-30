@@ -53,7 +53,7 @@
 #include "getopt.h"
 #include "getpagesize.h"
 #include "grep.h"
-#include "FaultSeeds.h"
+
 
 
 #undef MAX
@@ -727,7 +727,7 @@ setmatcher(name)
       }
   return 0;
 }
-
+#include "FaultSeeds.h"
 int
 main(argc, argv)
      int argc;
